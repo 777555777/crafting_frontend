@@ -57,7 +57,7 @@ body {
     font-size: var(--font-size);
     color: hsl(0, 0%, 100%);
     text-shadow: 2px 2px #000A;
-    /*background-color: red;  <==================================================================================================== */
+    background-color: red; /* <==================================================================================================== */
 }
 .sr-only {
     position: absolute;
@@ -226,7 +226,7 @@ body {
 .price-list {
     column-count: 2;
     column-gap: 3rem;
-    /*background-color: blueviolet;  <============================================================================================================= */
+    background-color: blueviolet; /* <============================================================================================================= */
 }
 
 .price-list li {
@@ -413,7 +413,6 @@ body {
     .mc-btn-wrapper {
         width: 29rem;
     }
-
 }
 
 @media only screen and (max-width: 640px) {
@@ -434,7 +433,85 @@ body {
     }
 }
 
+@media only screen and (max-width: 550px) {
+    :root {
+        --font-size: 1.15rem;
+    }
 
+    .mc-window-border {
+        margin-top: 3%;
+    }
+
+    .craft-ui {
+        gap: 1.0625rem;
+    }
+
+    .price-list li img,
+    .craft-ui-body tr td {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .craft-ui-body tr td img {
+        width: 36px;
+    }
+
+    .result-ui-body tr td {
+        padding: 4px;
+        width: 56px;
+        height: 56px;
+    }
+    .result-ui-body tr td img {
+        width: 40px;
+    }
+
+    .price-list li img {
+        padding: 4px
+    }
+
+    .price-list {
+        column-gap: 1.5rem;
+    }
+    
+    .price-list li .input,
+    .amount-input {
+        width: 5rem;
+    }
+
+    .mc-btn-wrapper {
+        width: 19.5rem;
+    }
+
+    .input {
+        height: 3rem;
+    }
+
+    /* Firefox */
+    .amount-slider[type=range]::-moz-range-track,
+    .amount-slider[type=range]::-moz-range-thumb {
+        height: 44px;
+    }
+
+    .amount-slider[type=range]::-moz-range-thumb {
+        width: 16px;
+    }
+
+    /* Chrome / Edge / Opera */
+    .amount-slider[type=range]::-webkit-slider-runnable-track,
+    .amount-slider[type=range]::-webkit-slider-thumb {
+        height: 44px;
+    }
+
+    .amount-slider[type=range]::-webkit-slider-thumb {
+        width: 16px;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .container {
+        padding: 0.7rem 0.7rem;
+    }
+}
 
 /* W I P
 @media only screen and (max-width: 550px) {
