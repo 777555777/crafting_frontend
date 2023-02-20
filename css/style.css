@@ -41,8 +41,8 @@ fieldset {
     --border-crafting-bottom-right: hsl(0, 0%, 90%);
     
     /* Darkmode Colors */ /*
-    --window-background-color: hsl(0, 0%, 29%);
-    --crafting-item-background: hsl(0, 0%, 18%);
+    --window-background-color: hsl(0, 0%, 33%);
+    --crafting-item-background: hsl(0, 0%, 20%);
     
     --border-top-left: hsl(0, 0%, 42%);
     --border-bottom-right: hsl(0, 0%, 20%);
@@ -199,7 +199,9 @@ body {
     font-family: 'MinecraftiaRegular';
     font-size: var(--font-size);
     color: var(--form-input-text);
+}
 
+select.input {
     text-overflow: ellipsis;
 }
 
@@ -502,6 +504,9 @@ body {
     .price-list li .input,
     .amount-input {
         width: 5rem;
+        font-size: 1rem;
+        padding: 0.5rem;
+        text-align: center;
     }
 
     .mc-btn-wrapper {
